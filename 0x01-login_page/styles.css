@@ -1,0 +1,21 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login-sec{
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+.left-pan {
+    flex: 2 1 auto;
+    background-color: rgb(82, 82, 212);
+}
+
+.right-pan {
+    flex: 1.5 1 auto;
+    background-color: brown;
+}
