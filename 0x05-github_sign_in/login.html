@@ -9,25 +9,33 @@
 <body>
     <div class="sec flex-col flex-cen-top full-height">
         <!-- heading & logo -->
-        <div class="flex-col flex-cen">
+        <div class="flex-col flex-cen mrg-block">
             <img src="images/github-main.png" alt="" class="logo">
-            <h1>Sign in to GitHub</h1>
+            <h2 class="top-header">Sign in to GitHub</h2>
         </div>
 
         <!-- first box -->
-        <div>
-            <label for="">Username or email address</label>
-            <input type="text" name="" id="">
-
-            <div>
-                <label for="">Password</label>
-                <a href="">Forgot password?</a>
+        <div class="flex-col flex-cen mrg-block cont-box">
+            <div class="max-box">
+                <div class="flex-col flex-left">
+                    <label for="">Username or email address</label>
+                    <input type="text" name="" id="">
+                </div>
+    
+                <div class="flex-col flex-left">
+                    <div>
+                        <label for="">Password</label>
+                        <a href="">Forgot password?</a>
+                    </div>
+                    <input type="text" name="" id="">
+                </div>
+    
+                <input type="submit" name="" id="" value="Sign in">
             </div>
-            <input type="text" name="" id="">
         </div>
 
         <!-- second box -->
-        <div>
+        <div class="flex-col flex-cen mrg-block cont-box">
             <a href="">Sign in with a passkey</a>
             <div>
                 New to GitHub? 
@@ -36,7 +44,7 @@
         </div>
 
         <!-- footer -->
-        <div class="flex-row">
+        <div class="flex-row mrg-block">
             <a href="">Terms</a>
             <a href="">Privacy</a>
             <a href="">Docs</a>
