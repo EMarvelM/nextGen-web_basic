@@ -1,0 +1,177 @@
+diff --git a/0x04-chatgpt_prompt_page/prompt.html b/0x04-chatgpt_prompt_page/prompt.html
+index ade19ee..5e07431 100644
+--- a/0x04-chatgpt_prompt_page/prompt.html
++++ b/0x04-chatgpt_prompt_page/prompt.html
+@@ -23,7 +23,11 @@
+                 <div class="middle-part">
+                     <div class="inner-middle-part">
+                         <h1>What can I help with?</h1>
+-                        <input type="text" placeholder="Message ChatGPT" class="prompt-box">
++                        <div class="text-box">
++                            <img src="" alt="" class="icon">
++                            <textarea type="text" placeholder="Message ChatGPT" class="prompt-box"></textarea>
++                            <img src="" alt="" class="icon">
++                        </div>
+                         <div>
+                             <button>Create image</button>
+                             <button>Summarize text</button>
+diff --git a/0x04-chatgpt_prompt_page/styles.css b/0x04-chatgpt_prompt_page/styles.css
+index 72739a1..7adcf65 100644
+--- a/0x04-chatgpt_prompt_page/styles.css
++++ b/0x04-chatgpt_prompt_page/styles.css
+@@ -49,8 +49,9 @@
+ }
+ 
+ .middle-part {
+-    min-height: 18%;
+-    max-width: 70%;
++    min-height: 19%;
++    max-width: 90%;
++    min-width: 70%;
+ }
+ .inner-middle-part {
+     display: flex;
+@@ -60,6 +61,10 @@
+     justify-content: space-between;
+ }
+ 
++.inner-middle-part h1{
++    font-weight: 580;
++}
++
+ .footer-part {
+     text-align: center;
+ }
+@@ -80,7 +85,29 @@
+     display: inline-block;
+     transform: rotate(90deg);
+ }
++.text-box {
++    width: 100%;
++    border-radius: 30px;
++    color: #fff;
++    background-color: rgba(255, 255, 255, 0.1);
+ 
++    display: flex;
++    flex-direction: row;
++    justify-content: space-between;
++    align-items: center;
++}
+ .prompt-box {
+-    width: 100%;
++    background-color: transparent;
++    color: #fff;
++    width: 80%;
++    border: none;
++    /* padding: 10px 40px 10px 40px; */
++    word-wrap: break-word;
++    min-height: 1.5rem;
++    overflow-y: auto;
++    margin-block: 8px;
++    max-height: 8rem;
++}
++.prompt-box:focus, .prompt-box::-moz-selection {
++    border: none;
+ }
+\ No newline at end of file
+diff --git a/0x05-github_sign_in/login.html b/0x05-github_sign_in/login.html
+index 8a75de2..f8dcd56 100644
+--- a/0x05-github_sign_in/login.html
++++ b/0x05-github_sign_in/login.html
+@@ -19,18 +19,18 @@
+             <div class="max-box">
+                 <div class="flex-col flex-left">
+                     <label for="">Username or email address</label>
+-                    <input type="text" name="" id="">
++                    <input type="text" name="" id="" class="input-field">
+                 </div>
+     
+                 <div class="flex-col flex-left">
+-                    <div>
+-                        <label for="">Password</label>
++                    <div class="flex-row space-out">
++                        <label for="pass">Password</label>
+                         <a href="">Forgot password?</a>
+                     </div>
+-                    <input type="text" name="" id="">
++                    <input type="password" name="" id="pass" class="input-field">
+                 </div>
+     
+-                <input type="submit" name="" id="" value="Sign in">
++                <input type="submit" name="" id="" value="Sign in" class="sign-btn">
+             </div>
+         </div>
+ 
+diff --git a/0x05-github_sign_in/styles.css b/0x05-github_sign_in/styles.css
+index 24d6872..42fff93 100644
+--- a/0x05-github_sign_in/styles.css
++++ b/0x05-github_sign_in/styles.css
+@@ -1,5 +1,6 @@
+ :root{
+     --default-bg: #0d1117;
++    --tp-border-line: rgba(238, 228, 228, 0.2);
+ }
+ 
+ * {
+@@ -19,6 +20,7 @@ a {
+     padding-top: 28px;
+     background-color: var(--default-bg);
+     color: white;
++    width: 100%;
+ }
+ 
+ .flex-only {
+@@ -48,7 +50,10 @@ a {
+     justify-content: flex-start;
+     align-items: start;
+ }
+-
++.space-out {
++    justify-content: space-between;
++    width: 100%;
++}
+ .full-height {
+     height: 100%;
+ }
+@@ -64,6 +69,7 @@ a {
+ 
+ .cont-box {
+     min-width: 290px;
++    
+     border: .8px solid rgba(238, 228, 228, 0.2);
+     border-radius: 5px;
+     padding: 20px;
+@@ -93,4 +99,33 @@ a {
+ 
+ .top-header {
+     font-weight: 100;
++    margin-top: 20px;
++}
++
++.max-box, .max-box input {
++    width: 100%;
++}
++
++.sign-btn {
++    background-color: green;
++    border: none;
++    padding-block: 9px;
++    border-radius: 5px;
++    cursor: pointer;
++    color: #fff;
++    font-weight: 400;
++}
++.sign-btn:hover {
++    background-color: rgba(0, 128, 0, 0.9);
++}
++
++.input-field {
++    background-color: transparent;
++    border: .5px solid var(--tp-border-line);
++    padding-block: 6px;
++    border-radius: 5px;
++}
++
++.max-box input {
++    margin-block: 7px;
+ }

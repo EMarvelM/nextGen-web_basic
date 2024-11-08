@@ -1,5 +1,6 @@
 :root{
     --default-bg: #0d1117;
+    --tp-border-line: rgba(238, 228, 228, 0.2);
 }
 
 * {
@@ -19,6 +20,7 @@ a {
     padding-top: 28px;
     background-color: var(--default-bg);
     color: white;
+    width: 100%;
 }
 
 .flex-only {
@@ -48,7 +50,10 @@ a {
     justify-content: flex-start;
     align-items: start;
 }
-
+.space-out {
+    justify-content: space-between;
+    width: 100%;
+}
 .full-height {
     height: 100%;
 }
@@ -64,6 +69,7 @@ a {
 
 .cont-box {
     min-width: 290px;
+    
     border: .8px solid rgba(238, 228, 228, 0.2);
     border-radius: 5px;
     padding: 20px;
@@ -93,4 +99,33 @@ a {
 
 .top-header {
     font-weight: 100;
+    margin-top: 20px;
+}
+
+.max-box, .max-box input {
+    width: 100%;
+}
+
+.sign-btn {
+    background-color: green;
+    border: none;
+    padding-block: 9px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+}
+.sign-btn:hover {
+    background-color: rgba(0, 128, 0, 0.9);
+}
+
+.input-field {
+    background-color: transparent;
+    border: .5px solid var(--tp-border-line);
+    padding-block: 6px;
+    border-radius: 5px;
+}
+
+.max-box input {
+    margin-block: 7px;
 }
