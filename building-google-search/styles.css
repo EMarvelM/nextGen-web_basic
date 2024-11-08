@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.big-box {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+
+    background-color: rgb(33, 28, 28);
+}
+
+.top-cont {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 10px;
+}
+.inner-top-cont {
+    font-size: 15px;
+    display: flex;
+    min-width: 10%;
+    max-width: 40%;
+    justify-content: space-between;
+}
+/* .inner-top-cont a {
+    text-decoration: none;
+}
+.inner-top-cont a:hover {
+    text-decoration: underline;
+} */
+
+/* middle box */
+.middle-cont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 30%;
+    max-height: 40%;
+    justify-content: space-between;
+}
+.middle-cont h1 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.search-box {
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ece4e4;
+    width: 30%;
+
+    display: flex;
+    justify-content: space-between;
+}
+.search-box:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+.search-box input {
+    background-color: transparent;
+    height: 30px;
+    border: none;
+    width: 70%;
+}
+
+.middle-btn button{
+    padding: 12px 18px;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-inline: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.middle-btn button:hover{
+    cursor: pointer;
+    border: 1px solid #ece4e4;
+}
+
+.links a {
+    /* text-decoration: none; */
+    color: rgb(44, 44, 138);
+    margin-inline: 5px;
+}
+/* .links a:hover {
+    text-decoration: underline;
+} */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inner-footer {
+    height: 60px;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    margin-top: 1.8px;
+    background-color: rgb(16, 15, 15);
+}
+
+.inner-footer div a {
+    margin-inline: 25px;
+}
