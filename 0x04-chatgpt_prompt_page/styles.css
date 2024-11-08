@@ -20,14 +20,15 @@
 }
 
 .right-panel {
-    flex: 8;
+    flex: 7.5;
     height: 100vh;
-    padding: 20px;
+    padding: 18px;
     background-color: #676767;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     color: #fff;
 }
 
@@ -36,21 +37,27 @@
 }
 
 .left-panel {
-    flex: 1.3;
+    flex: 1.5;
     height: 100vh;
     background-color: blue;
 }
 
 .top-part {
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
 .middle-part {
+    min-height: 18%;
+    max-width: 70%;
+}
+.inner-middle-part {
     display: flex;
-    flex-direction: column;
     align-items: center;
-
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .footer-part {
@@ -72,4 +79,8 @@
 .rotate {
     display: inline-block;
     transform: rotate(90deg);
+}
+
+.prompt-box {
+    width: 100%;
 }
