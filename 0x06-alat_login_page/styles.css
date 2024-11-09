@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sec {
+    display: flex;
+}
+
+.left-panel {
+    flex: 1 2 55%;
+    min-width: 30%;
+}
+.right-panel {
+    flex: 1 1 45%;
+    min-width: 40%;
+}
+
+@media (max-width: 768px) {
+    .sec {
+        flex-direction: column;
+    }
+    .left-panel {
+        flex: 1 2 30%;
+    }
+    .right-panel {
+        flex: 1 1 70%
+    }
+}
