@@ -46,8 +46,10 @@
     min-height: 100%;
 }
 
+
+/* fixed - fixed */
 .abs {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 15px;
 
@@ -58,7 +60,7 @@
 }
 
 .abs-2 {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
 
@@ -87,7 +89,7 @@
     max-width: 32%;
 }
 .darker{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
@@ -96,11 +98,13 @@
     
     visibility: hidden;
 }
+
 .abs:hover ~ .darker,
 .abs:hover ~ .abs-2 {
-    opacity: 1;
     visibility: visible;
 }
+
+
 
 @media (max-width: 768px) {
     .sec {
