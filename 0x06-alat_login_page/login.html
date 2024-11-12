@@ -12,17 +12,17 @@
         <!-- left panel -->
         <div class="left-panel">
             <div class="inner-left-panel">
-                <div>
-                    <h1>Talk to Us</h1>
+                <div class="top-text">
+                    <h3>Talk to Us</h3>
                     <p>We are happy to assist</p>
                 </div>
                 <div>
                     <div class="flex-row">
-                        <div class="flex-row">
+                        <div class="flex-row ico-text">
                             <i class="bi bi-envelope-fill small small-space-r"></i>
                             <a href="">help@alat.ng</a>
                         </div>
-                        <div class="flex-row">
+                        <div class="flex-row ico-text">
                             <i class="bi bi-telephone-fill small small-space-r"></i>
                             <span>070022552528</span>
                         </div>
@@ -89,7 +89,7 @@
         <!-- fixed - absolute -->
         <button class="abs">Manage Consent</button>
         <div class="darker"></div>
-        <div class="abs-2">
+        <div class="abs-box">
             <div>
                 <img src="" alt="">
                 <img src="" alt="">
@@ -99,12 +99,12 @@
                 <p>To provide the best experiences, we use technologies like cookies to store and/or access device information. Consenting to these technologies will allow us to process data such as browsing behavior or unique IDs on this site. Not consenting or withdrawing consent, may adversely affect certain features and functions.</p>
             </div>
             <div class="flex-cen">
-                <button>Accept</button>
+                <button class="btn-focus" autofocus>Accept</button>
                 <button>Deny</button>
                 <button>View Preferences</button>
             </div>
-            <div>
-
+            <div class="cen">
+                <a href="">Privacy Policy</a>
             </div>
         </div>
     </section>
@@ -112,16 +112,22 @@
     <script>
         const btn = document.querySelector('.abs');
         const overlay = document.querySelector('.darker');
-        const fixedBox = document.querySelector('.abs-2');
+        const fixedBox = document.querySelector('.abs-box');
+        const acceptBtn = document.querySelector('.btn-focus');
 
         function hide() {
             overlay.style.visibility = 'hidden';
             fixedBox.style.visibility = 'hidden';
+            btn.style.visibility = 'visible';
         }
+
+        overlay.addEventListener('click', hide)
 
         btn.addEventListener('click', () => {
             overlay.style.visibility = 'visible';
             fixedBox.style.visibility = 'visible';
+            btn.style.visibility = 'hidden';
+            acceptBtn.focus()
 
             overlay.addEventListener('click', hide)
         });

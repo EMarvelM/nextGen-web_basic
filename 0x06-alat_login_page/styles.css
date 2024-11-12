@@ -15,6 +15,12 @@
     flex-direction: row;
     align-items: center;
 }
+.ico-text a, .ico-text span {
+    font-size: 14px;
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+}
 
 /* icons */
 i.small {
@@ -55,12 +61,23 @@ i.big-space-r {
     background-size: cover;
 }
 .inner-left-panel{
-    display: flex;
-    min-height: 17%;
-    max-height: 50%;
-    flex-direction: column;
-    justify-content: space-around;
+    min-height: 19%;
+    max-height: 30%;
     color: #fff;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inner-left-panel .top-text h3{
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.inner-left-panel .top-text p{
+    font-weight: 0;
+    font-size: 13px;
 }
 
 /* right panel */
@@ -120,7 +137,7 @@ i.big-space-r {
 }
 .line {
     display: block;
-    height: 5px;
+    height: 4px;
     width: 11%;
     background-color: var(--pri-color);
     margin-top: 10px;
@@ -175,40 +192,62 @@ input[type="submit"]:hover {
     border: .1px solid rgba(66, 62, 62, .3);
     padding: 10px 8px;
     z-index: 1000;
+    visibility: hidden;
 }
 .abs:hover {
     cursor: pointer;
     border: none;
 }
 
-.abs-2 {
+.abs-box {
     position: fixed;
     bottom: 30px;
     right: 20px;
 
-    max-width: 500px;
-    max-height: 500px;
-    padding: 20px;
+    max-width: 650px;
+    min-height: 300px;
+    padding: 30px;
     background-color: #fff;
+    border: none;
     border-radius: 20px;
 
     /* angle distance spread darker*/
-    box-shadow: 0px 0px 2px 0px;
-    visibility: hidden;
+    box-shadow: 0px 0px 2px rgba(122, 31, 31, .4);
+    visibility: visible;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.abs-2 p {
+.abs-box p {
     font-size: 15px;
+}
+.abs-box .cen {
+    display: block;
+    margin-inline: auto;
 }
 .flex-cen {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    
+}
+.flex-cen button:focus{
+    background-color: var(--pri-color);
+    color: #fff;
+    outline: none;
 }
 .flex-cen button{
     flex: 1;
     padding: 10px;
     font-size: 15px;
-    max-width: 32%;
+    max-width: 32.5%;
+    cursor: pointer;
+    color: var(--pri-color);
+
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
 }
 .darker{
     position: fixed;
@@ -218,14 +257,14 @@ input[type="submit"]:hover {
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     
-    visibility: hidden;
+    visibility: visible;
 }
 
 /**  when using hover instead of
  *   the js in the html 
  */
 /* .abs:hover ~ .darker,
-.abs:hover ~ .abs-2 {
+.abs:hover ~ .abs-box {
     visibility: visible;
 } */
 
