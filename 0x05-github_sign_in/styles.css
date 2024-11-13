@@ -58,11 +58,13 @@ a {
     height: 100%;
 }
 
-.logo {
+img.logo {
     width: 45px;
     height: 45px;
 }
-
+i.logo{
+    font-size: 45px;
+}
 .mrg-block {
     margin-block: 10px;
 }
@@ -123,7 +125,9 @@ a {
     background-color: transparent;
     border: .5px solid var(--tp-border-line);
     padding-block: 6px;
+    padding-inline: 10px;
     border-radius: 5px;
+    outline: none;
 }
 
 .max-box input {
