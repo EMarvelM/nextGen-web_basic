@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-y: scroll;
 }
 
 .flex-row {
@@ -20,6 +21,11 @@
     margin-right: 20px;
     color: #fff;
     text-decoration: none;
+}
+.bottom-text a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
 }
 
 /* icons */
@@ -226,11 +232,20 @@ input[type="submit"]:hover {
     display: block;
     margin-inline: auto;
 }
+.abs-box .cen a {
+    color: var(--pri-color);
+    font-size: 14px;
+}
 .flex-cen {
     display: flex;
     width: 100%;
     justify-content: space-between;
     
+}
+.flex-cen button:hover{
+    background-color: rgba(0,0,0,0.1);
+    border: 1px solid var(--pri-color);
+    outline: none;
 }
 .flex-cen button:focus{
     background-color: var(--pri-color);
