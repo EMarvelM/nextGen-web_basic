@@ -1,8 +1,10 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
     <body>
         <div class="login-sec">
@@ -10,8 +12,8 @@
             <!-- Left panel -->
             <div class="left-pan">
                 <div class="switch-opt">
-                    <div><a href="">LOGIN</a></div>
-                    <div><a href="../0x02-registration_page/register.html">SIGN UP</a></div>
+                    <div class="overlay1"><a href="" class="overlay-link1">LOGIN</a></div>
+                    <div class="overlay2"><a href="../0x02-registration_page/register.html" class="overlay-link2">SIGN UP</a></div>
                 </div>
             </div>
 
@@ -31,11 +33,33 @@
 
                 <div class="background-right">
                     <span class="link-style">Or Login with</span>
-                    <div> <img src="" alt=""> Google</div>
-                    <div> <img src="" alt=""> Facebook</div>
+                    <div> <i class="bi bi-google"></i> Google</div>
+                    <!-- <div> <img src="" alt=""> Google</div> -->
+                    <div> <i class="bi bi-facebook"></i> Facebook</div>
                 </div>
             </div>
 
         </div>
+
+    <script>
+        const overlay1 = document.querySelector('.overlay1');
+        const overlay2 = document.querySelector('.overlay2');
+        const overlayLink1 = document.querySelector('.overlay-link1');
+        const overlayLink2 = document.querySelector('.overlay-link2');
+        
+
+        overlay1.addEventListener("mouseover", () => {
+            overlayLink1.style.color = 'red';
+            setTimeout(() => {
+                overlayLink1.style.color = '';
+            }, 500)
+        });
+        overlay2.addEventListener("mouseover", () => {
+            overlayLink2.style.color = 'red';
+            setTimeout(() => {
+                overlayLink2.style.color = '';
+            }, 500)
+        });
+    </script>
     </body>
 </html>

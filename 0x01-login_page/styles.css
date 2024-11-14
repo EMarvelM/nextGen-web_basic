@@ -89,7 +89,6 @@ a {
     display: flex;
     flex-direction: column;
     min-width: 400px;
-
     margin: auto;
 }
 
@@ -100,13 +99,10 @@ a {
     border: none;
     border-bottom: 1px solid black;
     font-size: large;
+    outline: none;
 }
 .centered-box .flex-row {
     margin-top: 20px;
-}
-
-.top-right input:focus {
-    border: none;
 }
 
 .background-right {
@@ -116,4 +112,61 @@ a {
     align-items: center;
     padding-inline: 110px;
 }
+.background-right i {
+    cursor: pointer;
+}
+.background-right i:hover {
+    color: rgb(82, 82, 212);
+}
 
+
+
+@media (min-width: 468px) and (max-width: 1025px) {
+    .centered-box {
+        min-width: 100px;
+    }
+    .background-right {
+        justify-content: space-between;
+        padding-inline: 30px;
+    }
+}
+@media (min-width: 468px) and (max-width: 800px) {
+    .left-pan {
+        flex: 2;
+    }
+
+}
+@media (max-width: 468px) {
+    .login-sec {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .left-pan {
+        flex: .5;
+        max-height: 100px;
+        justify-content: center;
+        align-items: unset;
+    }
+    .switch-opt {
+        flex-direction: row;
+        margin: 0;
+    }
+    .switch-opt div {
+        display: inline-block;
+        margin: 0;
+        padding: 15px;
+        border-radius: 0 0 10px 10px;
+    }
+    .right-pan {
+        flex: 2;
+    }
+    .top-right {
+        flex: 6;
+    }
+    .centered-box {
+        min-width: 60px;
+    }
+    .background-right{
+        flex: 1;
+    }
+}
