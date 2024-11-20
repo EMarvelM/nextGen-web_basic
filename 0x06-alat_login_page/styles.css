@@ -167,7 +167,7 @@ i.big-space-r {
 }
 .bottom-box a{
     color: var(--hover-pri-color);
-    font-weight: 900;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -201,7 +201,7 @@ i.big-space-r {
     justify-content: space-between;
 }
 input {
-    margin-block: 3x;
+    margin-block: 3px;
     min-width: 100%;
     min-height: 45px;
     border-radius: 4px;
