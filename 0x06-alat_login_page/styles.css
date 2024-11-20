@@ -14,10 +14,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
     overflow-y: scroll;
 }
-
+.flex-s-mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -254,12 +258,13 @@ input[type="submit"]:hover {
     bottom: 30px;
     right: 20px;
 
+    
     max-width: 650px;
-    min-height: 300px;
-    padding: 30px;
+    min-height: 350px;
+    padding: 25px;
     background-color: #fff;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
 
     /* angle distance spread darker*/
     box-shadow: 0px 0px 2px rgba(122, 31, 31, .4);
@@ -269,8 +274,13 @@ input[type="submit"]:hover {
     flex-direction: column;
     justify-content: space-between;
 }
-.abs-box p {
-    font-size: 15px;
+.abs-text p {
+    font-size: 13px;
+    line-height: 24px;
+}
+.abs-text h2 {
+    font-size: 20px;
+    font-weight: 500;
 }
 .abs-box .cen {
     display: block;
@@ -280,6 +290,29 @@ input[type="submit"]:hover {
     color: var(--pri-color);
     font-size: 14px;
 }
+.abs-logo {
+    height: var(--big-logo);
+    width: var(--big-logo);
+}
+.close-icon .bi {
+    font-size: 20px;
+    font-weight: 900;
+}
+.close-icon {
+    max-height: 30px;
+    max-width: 30px;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-icon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 .flex-cen {
     display: flex;
     width: 100%;
