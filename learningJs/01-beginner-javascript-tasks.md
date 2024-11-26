@@ -162,6 +162,7 @@ Shipping: Standard Rate
 ```
 
 [Continued in the same comprehensive style for remaining tasks...]
+[continue the tasks by clicking here](02-beginner-javascript-tasks.md)
 
 ## Additional Guidelines
 
@@ -184,5 +185,3 @@ Shipping: Standard Rate
 - Use descriptive variable names
 - Add comments to explain your thinking
 - Don't be afraid to experiment
-
-Would you like me to continue with the same level of detail for the remaining tasks?
