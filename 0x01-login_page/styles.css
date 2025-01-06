@@ -38,7 +38,6 @@ a {
     min-height: 100vh;
     display: flex;
     width: 100%;
-    max-width: 100%;
 }
 
 .left-pan {
@@ -110,7 +109,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-inline: 110px;
+    padding-inline: 10%;
 }
 .background-right i {
     cursor: pointer;
