@@ -1,0 +1,12 @@
+{
+  "name": "0x0a-javascript_function",
+  "version": "1.0.0",
+  "main": "01-fatorial.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
